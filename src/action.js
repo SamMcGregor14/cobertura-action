@@ -73,9 +73,9 @@ async function action(payload) {
     (report) => Math.floor(report.total) < minimumCoverage
   );
 
-  if (pullRequestNumber) {
-    await addComment(pullRequestNumber, comment, reportName);
-  }
+//  if (pullRequestNumber) {
+//    await addComment(pullRequestNumber, comment, reportName);
+//  }
   await addCheck(
     comment,
     reportName,
